@@ -21,10 +21,17 @@ class BankAccount {
 public class BankAccountOO {
 	public static void main(String[] agrs) {
 	
+		/*
+		BankAccount yoon; //yoon이라는 BankAccount의 주소값을 저장하는 참조변수 정의
+		BankAccount park;
+		yoon = new BankAccount(); //참조변수 yoon에 BankAccount클래스의 인스턴스(객체)를 생성하여 주소값을 정의해준다.
+		park = new BankAccount();
+		*/
+		
 		BankAccount yoon = new BankAccount();
 		BankAccount park = new BankAccount();
 		
-		yoon.deposit(5000);
+		yoon.deposit(5000); //BankAccount인스턴스의 주소값이 정의된 yoon으로 인스턴스에 접근하여 deposit메소드 사용.
 		park.deposit(3000);
 		
 		yoon.withdraw(2000);
